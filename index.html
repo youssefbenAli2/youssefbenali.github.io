@@ -7,37 +7,40 @@
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Font Awesome pour icônes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
 body { background:#0f172a; color:#e5e7eb; line-height:1.6; scroll-behavior:smooth; }
 a { color:#38bdf8; text-decoration:none; }
 header, section, footer { width:100%; }
-h1,h2,h3 { color:#38bdf8; }
-h1 { font-size:3rem; }
-h2 { font-size:2rem; border-left:4px solid #38bdf8; padding-left:15px; margin-bottom:20px; }
-h3 { margin-bottom:10px; }
-ul { margin-left:20px; }
 header { text-align:center; padding:80px 20px; background:radial-gradient(circle at top, #0f172a, #020617); }
-header p { color:#94a3b8; font-size:1.2rem; margin:10px 0; }
+header h1 { font-size:3rem; color:#38bdf8; }
+header p { font-size:1.2rem; color:#94a3b8; margin:10px 0; }
 .btn { display:inline-block; padding:12px 24px; background:#38bdf8; color:#020617; border-radius:8px; font-weight:600; margin:5px; transition:.3s; }
 .btn:hover { background:#0ea5e9; color:#fff; }
 
 section { padding:60px 20px; max-width:1200px; margin:auto; }
+h2 { font-size:2rem; border-left:4px solid #38bdf8; padding-left:15px; margin-bottom:20px; }
+h3 { margin-bottom:10px; color:#38bdf8; }
 .card { background:#020617; border:1px solid #1e293b; border-radius:16px; padding:20px; margin-bottom:20px; transition: transform .3s, box-shadow .3s; }
 .card:hover { transform:translateY(-6px); box-shadow:0 20px 40px rgba(0,0,0,.6); }
-.card h3 { color:#38bdf8; }
 .card p, .card li { color:#94a3b8; font-size:0.95rem; }
+ul { margin-left:20px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
 
+/* Timeline style */
 .timeline { position: relative; padding-left: 40px; margin-top:20px; }
 .timeline::before { content: ''; position: absolute; left: 20px; top: 0; width: 4px; height: 100%; background:#38bdf8; }
 .timeline-item { position: relative; margin-bottom:40px; }
 .timeline-item::before { content: ''; position: absolute; left: -8px; top:0; width:16px; height:16px; background:#38bdf8; border-radius:50%; border:4px solid #020617; }
 
-@media(max-width:768px){ header { padding:60px 10px; } h1 { font-size:2rem; } h2 { font-size:1.5rem; } }
+@media(max-width:768px){
+  header { padding:60px 10px; }
+  h1 { font-size:2rem; }
+  h2 { font-size:1.5rem; }
+}
 </style>
 </head>
 <body>
@@ -46,7 +49,7 @@ section { padding:60px 20px; max-width:1200px; margin:auto; }
   <h1>Youssef BEN ALI</h1>
   <p>Ingénieur Réseau & Sécurité | 10 ans d’expérience</p>
   <p>📞 +33 6 64 69 74 98 | ✉️ <a href="mailto:Youssef.ben.ali@live.fr">Youssef.ben.ali@live.fr</a> | 📍 Paris, Île-de-France | Permis B</p>
-  <a href="YBA-INGENIEUR RESEAU ET SECURITE.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf"></i> Télécharger CV</a>
+  <a href="YBA-INGENIEUR-RESEAU-ET-SECURITE.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf"></i> Télécharger CV</a>
   <a href="https://www.linkedin.com/in/youssef-ben-ali-85b30178/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
 </header>
 
@@ -123,6 +126,36 @@ section { padding:60px 20px; max-width:1200px; margin:auto; }
         <li>Gestion serveurs DHCP/DNS</li>
         <li>Supervision réseau via Nagios</li>
         <li>Support N3 et haute disponibilité</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item card">
+      <h3>Africa Informatique Alum — Déc 2017 – Oct 2019</h3>
+      <p><strong>Ingénieur Réseau & Sécurité</strong></p>
+      <ul>
+        <li>Analyse & architecture du réseau datacenter</li>
+        <li>Installation & configuration équipements réseaux (Mikrotik, Fortinet, Cisco)</li>
+        <li>Supervision serveurs & support utilisateurs (Nagios, GLPI)</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item card">
+      <h3>AFSAC — Juin 2016 – Déc 2017</h3>
+      <p><strong>Ingénieur Réseau & Systèmes</strong></p>
+      <ul>
+        <li>Déploiement et administration infrastructures IT</li>
+        <li>Gestion réseau WAN, VPN, serveurs et sauvegardes</li>
+        <li>Installation Office365, supervision et documentation</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item card">
+      <h3>BIAT — Jan 2015 – Mai 2016</h3>
+      <p><strong>Ingénieur Système et Réseaux</strong></p>
+      <ul>
+        <li>Conception et déploiement cloud privé (OpenStack)</li>
+        <li>Configuration services IaaS/PaaS/SaaS</li>
+        <li>Support filiales et sécurité réseau</li>
       </ul>
     </div>
 
