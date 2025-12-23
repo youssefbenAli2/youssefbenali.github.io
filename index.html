@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Youssef Ben Ali — Portfolio Réseau & Sécurité</title>
+<title>Youssef Ben Ali — Ingénieur Réseau & Sécurité</title>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,163 +12,165 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Inter', sans-serif; background:#0f172a; color:#e5e7eb; line-height:1.6; scroll-behavior:smooth; }
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
+body { background:#0f172a; color:#e5e7eb; line-height:1.6; scroll-behavior:smooth; }
 a { color:#38bdf8; text-decoration:none; }
 header, section, footer { width:100%; }
+h1,h2,h3 { color:#38bdf8; }
+h1 { font-size:3rem; }
 h2 { font-size:2rem; border-left:4px solid #38bdf8; padding-left:15px; margin-bottom:20px; }
+h3 { margin-bottom:10px; }
 ul { margin-left:20px; }
 
-header { text-align:center; padding:100px 20px; background:radial-gradient(circle at top, #0f172a, #020617); }
-header h1 { font-size:3rem; color:#38bdf8; margin-bottom:10px; }
-header p { font-size:1.2rem; color:#94a3b8; margin-bottom:20px; }
-header .btn { margin:10px; }
-
-.btn { display:inline-block; padding:12px 24px; background:#38bdf8; color:#020617; border-radius:8px; font-weight:600; transition:.3s; }
+header { text-align:center; padding:80px 20px; background:radial-gradient(circle at top, #0f172a, #020617); }
+header p { color:#94a3b8; font-size:1.2rem; margin:10px 0; }
+.btn { display:inline-block; padding:12px 24px; background:#38bdf8; color:#020617; border-radius:8px; font-weight:600; margin:5px; transition:.3s; }
 .btn:hover { background:#0ea5e9; color:#fff; }
 
 section { padding:60px 20px; max-width:1200px; margin:auto; }
 .card { background:#020617; border:1px solid #1e293b; border-radius:16px; padding:20px; margin-bottom:20px; transition: transform .3s, box-shadow .3s; }
 .card:hover { transform:translateY(-6px); box-shadow:0 20px 40px rgba(0,0,0,.6); }
-.card h3 { margin-bottom:10px; color:#38bdf8; }
+.card h3 { color:#38bdf8; }
 .card p, .card li { color:#94a3b8; font-size:0.95rem; }
 .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
 
-.tag { display:inline-block; padding:5px 10px; margin:3px 3px 0 0; border-radius:999px; font-size:0.75rem; background:#0f172a; border:1px solid #1e293b; color:#38bdf8; }
+.timeline { position: relative; padding-left: 40px; margin-top:20px; }
+.timeline::before { content: ''; position: absolute; left: 20px; top: 0; width: 4px; height: 100%; background:#38bdf8; }
+.timeline-item { position: relative; margin-bottom:40px; }
+.timeline-item::before { content: ''; position: absolute; left: -8px; top:0; width:16px; height:16px; background:#38bdf8; border-radius:50%; border:4px solid #020617; }
 
 footer { text-align:center; padding:40px 20px; color:#94a3b8; font-size:0.9rem; border-top:1px solid #1e293b; }
-
-.fadeIn { opacity:0; transform:translateY(20px); animation:fadeInAnim 1s forwards; }
-@keyframes fadeInAnim { to { opacity:1; transform:translateY(0); } }
-
-.skill-icon { margin-right:8px; color:#38bdf8; }
-.skill-tag { display:flex; align-items:center; background:#1e293b; padding:5px 10px; border-radius:8px; margin:5px; font-size:0.85rem; }
-
-@media(max-width:768px){ header { padding:60px 10px; } h2 { font-size:1.5rem; } header h1 { font-size:2rem; } }
+@media(max-width:768px){ header { padding:60px 10px; } h1 { font-size:2rem; } h2 { font-size:1.5rem; } }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Youssef Ben Ali</h1>
-  <p>Expert Réseau & Sécurité | Consultant / Ingénieur SOC</p>
-  <a href="YBA.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf"></i> Télécharger mon CV</a>
+  <h1>Youssef BEN ALI</h1>
+  <p>Ingénieur Réseau & Sécurité | 10 ans d’expérience</p>
+  <p>📞 +33 6 64 69 74 98 | ✉️ <a href="mailto:Youssef.ben.ali@live.fr">Youssef.ben.ali@live.fr</a> | 📍 Paris, Île-de-France | Permis B</p>
+  <a href="YBA.pdf" class="btn" target="_blank"><i class="fa fa-file-pdf"></i> Télécharger CV</a>
   <a href="https://www.linkedin.com/in/youssef-ben-ali-85b30178/" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
 </header>
 
 <section>
-  <h2>🎓 Diplômes</h2>
-  <div class="card fadeIn">
-    <ul>
-      <li>2014-2016 : Master Professionnel en Ingénierie des Systèmes Informatiques</li>
-      <li>2011-2014 : Licence Appliquée en Réseaux Informatiques</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>📜 Formations & Certifications</h2>
-  <div class="card fadeIn">
-    <ul>
-      <li>2025 : Cisco – Ethical Hacker, Cisco – Introduction to Cybersecurity</li>
-      <li>2023 : BIG-IP F5: 101 – Application Delivery Fundamentals</li>
-      <li>2018-2021 : Fortinet : NSE4, NSE5, NSE6</li>
-      <li>2020 : Microsoft Certified Azure Fundamentals AZ-900, ITIL V4, Scrum Foundation Professional Certificate</li>
-      <li>2019 : Formation CyberSecurity : Pentesting CEH_V10</li>
-      <li>2012-2014 : CISCO : CCNA 1,2,3,4</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>💡 Compétences & Méthodologies</h2>
+  <h2>💻 Compétences Techniques</h2>
   <div class="grid">
-    <div class="card fadeIn">
-      <h3><i class="fas fa-network-wired skill-icon"></i> Réseau & Sécurité</h3>
+    <div class="card">
+      <h3>Réseau & Sécurité</h3>
       <ul>
-        <li>Architecture, configuration & supervision réseau</li>
-        <li>Sécurité réseau : filtrage, politiques, vulnérabilités</li>
-        <li>Troubleshooting avancé & gestion d’incidents (N3)</li>
+        <li>TCP/IP, DHCP, DNS, SMTP, SNMP, SSH, Wi-Fi, LAN/WAN, SDWAN, Proxy, Reverse Proxy</li>
+        <li>Switch: CISCO Catalyst/Nexus, Alcatel, TP-Link, Zyxel</li>
+        <li>Firewall: Fortinet, Forcepoint, Cisco ASA, Juniper, Palo Alto, Mikrotik</li>
+        <li>VPN: Cisco AnyConnect, FortiClient EMS, FortiClient</li>
+        <li>WIFI: CISCO, TP-Link, Ruckus, Ucopia</li>
+        <li>Load Balancing: BIG-IP F5 LTM/GTM</li>
+        <li>Outils de vulnérabilité: OpenVas, CyberWatch, Qualys</li>
       </ul>
     </div>
-    <div class="card fadeIn">
-      <h3><i class="fas fa-server skill-icon"></i> Infrastructure & Exploitation</h3>
+    <div class="card">
+      <h3>Supervision & Automatisation</h3>
       <ul>
-        <li>Gestion des infrastructures</li>
-        <li>Sauvegardes & continuité de service</li>
+        <li>Supervision réseau: Nagios, Cacti, Grafana, OpenNMS, LibreNMS, Centreon</li>
+        <li>Scripting: PowerShell, Python</li>
+        <li>Automatisation: Gitlab, Jenkins</li>
       </ul>
     </div>
-    <div class="card fadeIn">
-      <h3><i class="fas fa-robot skill-icon"></i> Automatisation</h3>
+    <div class="card">
+      <h3>Domaine de Compétences</h3>
       <ul>
-        <li>Automatisation des processus & optimisation opérationnelle</li>
+        <li>Architecture & Configuration réseau</li>
+        <li>Administration & Supervision réseau</li>
+        <li>Filtrage et protection réseau</li>
+        <li>Analyse des vulnérabilités et sécurité avancée</li>
+        <li>Support Niveau 3 et gestion des infrastructures</li>
+        <li>Automatisation des processus & DevOps</li>
+        <li>Gestion des sauvegardes et continuité de service</li>
       </ul>
-    </div>
-    <div class="card fadeIn">
-      <h3><i class="fas fa-lightbulb skill-icon"></i> Soft Skills</h3>
-      <ul>
-        <li>Analyse & diagnostic structuré</li>
-        <li>Communication technique / managers</li>
-        <li>Gestion de crise / incidents majeurs</li>
-        <li>Synthèse & vulgarisation technique</li>
-        <li>Travail en environnement international</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>🛠 Expertises Techniques</h2>
-  <div class="card fadeIn">
-    <div class="grid">
-      <div class="skill-tag"><i class="fas fa-network-wired skill-icon"></i> TCP/IP, DHCP, DNS, SMTP, SNMP, SSH, LAN/WAN, SD-WAN</div>
-      <div class="skill-tag"><i class="fas fa-server skill-icon"></i> Switch: Cisco Catalyst/Nexus, Alcatel, Zyxel</div>
-      <div class="skill-tag"><i class="fas fa-shield-alt skill-icon"></i> Firewall: Fortinet, Cisco ASA, Palo Alto</div>
-      <div class="skill-tag"><i class="fas fa-wifi skill-icon"></i> Wifi: Cisco, TP-Link, Ruckus, Ucopia</div>
-      <div class="skill-tag"><i class="fas fa-tools skill-icon"></i> Load Balancing: BIG-IP F5</div>
-      <div class="skill-tag"><i class="fas fa-search skill-icon"></i> Supervision: Nagios, Cacti, Grafana</div>
-      <div class="skill-tag"><i class="fas fa-code skill-icon"></i> Scripting & Automatisation: Python, PowerShell, GitLab, Jenkins</div>
     </div>
   </div>
 </section>
 
 <section>
   <h2>💼 Expériences Professionnelles</h2>
-
-  <div class="card fadeIn">
-    <h3>Alcatel Submarine Networks – Depuis Juillet 2024</h3>
-    <p><strong>Consultant / Expert en Sécurité Réseau et Ingénierie SOC</strong></p>
-    <ul>
-      <li>Administration FortiGate, Forcepoint, Palo Alto et VPN</li>
-      <li>Supervision trafic réseau et remédiation vulnérabilités</li>
-      <li>Optimisation sécurité endpoints et architecture réseau</li>
-    </ul>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Mai – Juin 2024 | LA Poste Mobile</h3>
+      <p><strong>Ingénieur Cybersécurité</strong></p>
+      <ul>
+        <li>Implémentation CIS Benchmark sur Fortinet (FortiGate/FortiManager)</li>
+        <li>Audit de conformité et reporting sécurité</li>
+        <li>Configuration firewall et collaboration avec équipes IT</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Depuis Juillet 2024 | Alcatel Submarine Networks</h3>
+      <p><strong>Ingénieur Cybersécurité</strong></p>
+      <ul>
+        <li>Administration FortiGate, Forcepoint, Palo Alto et VPN</li>
+        <li>Supervision du trafic réseau et gestion endpoints FortiClient</li>
+        <li>Support N3 via JIRA, remédiation vulnérabilités et amélioration architecture sécurité</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Avril 2021 – Avril 2024 | Bpifrance</h3>
+      <p><strong>Ingénieur Réseau & Sécurité</strong></p>
+      <ul>
+        <li>SD-WAN Fortinet, administration proxys & firewalls</li>
+        <li>Monitoring avancé (Netbox, OpenNMS, LibreNMS, Grafana)</li>
+        <li>Automatisation Gitlab/Jenkins et support N3</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Novembre 2019 – Mars 2021 | Orange Business Services</h3>
+      <p><strong>Ingénieur Réseau & Sécurité</strong></p>
+      <ul>
+        <li>Administration réseau et firewall Fortinet/Cisco</li>
+        <li>VPN IPSec/SSL, supervision Nagios et support N3</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Décembre 2017 – Octobre 2019 | Africa Informatique Alum</h3>
+      <p><strong>Ingénieur Réseau & Sécurité</strong></p>
+      <ul>
+        <li>Analyse & architecture réseau datacenter</li>
+        <li>Installation et supervision équipements réseau et serveurs</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Juin 2016 – Décembre 2017 | AFSAC</h3>
+      <p><strong>Ingénieur Réseau & Systèmes</strong></p>
+      <ul>
+        <li>Installation, migration et supervision infrastructures IT</li>
+        <li>Administration serveurs et réseau, plan de récupération et O365</li>
+      </ul>
+    </div>
+    <div class="timeline-item">
+      <h3>Janvier 2015 – Mai 2016 | BIAT</h3>
+      <p><strong>Ingénieur Système et Réseaux</strong></p>
+      <ul>
+        <li>Conception et déploiement cloud privé OpenStack</li>
+        <li>Configuration IaaS/PaaS/SaaS pour filiales</li>
+      </ul>
+    </div>
   </div>
+</section>
 
-  <div class="card fadeIn">
-    <h3>Bpifrance – Avril 2021 – Avril 2024</h3>
-    <p><strong>Consultant Expert Infrastructures Réseau & SD WAN</strong></p>
-    <ul>
-      <li>Gestion équipements réseau et sécurité, SD-WAN Fortinet</li>
-      <li>Monitoring avancé (Netbox, LibreNMS, Grafana)</li>
-      <li>Automatisation des opérations et support N3</li>
-    </ul>
+<section>
+  <h2>🎓 Diplômes & Formations</h2>
+  <div class="grid">
+    <div class="card">
+      <ul>
+        <li>2016 : Master Professionnel en Ingénierie des Systèmes Informatiques</li>
+        <li>2014 : Licence Appliquée en Réseaux Informatiques</li>
+        <li>Formations & Certifications : Cisco Ethical Hacker, BIG-IP F5, Fortinet NSE4/5/6, Azure Fundamentals, ITIL V4, Scrum, CEH</li>
+      </ul>
+    </div>
   </div>
-
-  <div class="card fadeIn">
-    <h3>Orange Business Services – Nov 2019 – Mars 2021</h3>
-    <p><strong>Consultant / Expert Réseau & Sécurité</strong></p>
-    <ul>
-      <li>Configuration et supervision Fortinet/Cisco, VPN, DHCP/DNS</li>
-      <li>Supervision réseau via Nagios, troubleshooting N3</li>
-    </ul>
-  </div>
-
 </section>
 
 <footer>
-  © 2025 — Youssef Ben Ali | 
-  Email: <a href="mailto:youssef.ben.ali@gmail.com">youssef.ben.ali@gmail.com</a> | 
+  © 2025 — Youssef Ben Ali | Email: <a href="mailto:Youssef.ben.ali@live.fr">Youssef.ben.ali@live.fr</a> | 
   LinkedIn: <a href="https://www.linkedin.com/in/youssef-ben-ali-85b30178/" target="_blank">Youssef Ben Ali</a>
 </footer>
 
